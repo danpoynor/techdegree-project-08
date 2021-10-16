@@ -39,7 +39,7 @@ ul {
 
 header {
   display: grid;
-  grid-gap: 0.5rem;
+  grid-gap: .5rem;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas: "headline" "search";
@@ -59,7 +59,7 @@ header input {
   border: 1px solid #ccc;
   border-radius: 5px;
   grid-area: search;
-  padding: 0.5rem;
+  padding: .5rem;
 }
 header input:invalid {
   outline: 2px solid red;
@@ -74,7 +74,6 @@ section ul {
 @media screen and (min-width: 960px) {
   section ul {
     gap: 2.5rem;
-    grid-template-columns: repeat(-webkit-max-content);
     grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
     margin-top: 2.5rem;
   }
@@ -93,9 +92,9 @@ section figure {
   overflow: hidden;
   padding: 1.5rem;
   text-align: left;
-  transition: -webkit-transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
 }
 @media screen and (min-width: 960px) {
   section figure {
@@ -112,7 +111,7 @@ section figure figcaption {
   margin-right: auto;
 }
 section figure h3 {
-  margin-bottom: 0.25rem;
+  margin-bottom: .25rem;
 }
 section figure img {
   border-radius: 50%;
@@ -145,19 +144,21 @@ section .hidden {
   z-index: 1;
 }
 .dialog-backdrop {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, .4);
   content: "";
   display: block;
   height: 100vh;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
 }
 .dialog small {
   color: #999;
   display: block;
-  font-size: 0.8rem;
+  font-size: .8rem;
   margin-bottom: 1rem;
 }
 .dialog figure {
@@ -172,7 +173,7 @@ section .hidden {
   margin: auto;
 }
 .dialog h4 {
-  margin-top: 0.5rem;
+  margin-top: .5rem;
 }
 .dialog p,
 .dialog hr {
@@ -198,7 +199,7 @@ section .hidden {
   position: absolute;
   right: 1rem;
   top: 1rem;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color .2s ease-in-out;
   width: 2rem;
 }
 .dialog button:hover {

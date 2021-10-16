@@ -23,6 +23,7 @@ export const init = employeeEmail => {
   const existingDialog = document.querySelector('.dialog');
   existingDialog ? existingDialog[0].remove() : null;
   dialog.classList.add('dialog');
+  dialog.setAttribute('role', 'dialog');
   dialog.innerHTML = dialogTemplate;
   document.body.appendChild(dialog);
 
