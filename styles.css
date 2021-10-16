@@ -18,8 +18,10 @@ body {
 }
 
 h1 {
-  color: #2a353d;
-  font-size: 1.4rem;
+  color: #6a6a6a;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -29,7 +31,7 @@ h2 {
 
 h3,
 h4 {
-  color: #2a353d;
+  color: #4c565c;
   font-size: 1.2rem;
 }
 
@@ -123,7 +125,7 @@ section .hidden {
 .no-results {
   color: red;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: 600;
   margin-top: 1rem;
   text-align: center;
 }
